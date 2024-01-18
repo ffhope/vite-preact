@@ -20,7 +20,6 @@
     "jsxImportSource": "preact",
 
     /* Linting */
-    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true

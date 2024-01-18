@@ -27,7 +27,7 @@ export function App() {
           alignItems: "center",
           flexDirection: "column",
           justifyContent: "center",
-          overflow: 'hidden'
+          overflow: "hidden",
         }}
       >
         {app === "preact" && <PreactApp />}
@@ -68,35 +68,39 @@ function PreactApp() {
 
 function ReactApp() {
   return (
-    <micro-app
-      name="react-app"
-      url="https://vite-react.fufanghao.com/"
-      iframe
-    ></micro-app>
+    <iframe
+      style={{
+        width: "100%",
+        height: "100vw",
+      }}
+      frameBorder={0}
+      src="https://vite-react.fufanghao.com/"
+    ></iframe>
   );
 }
 
 function VueApp() {
   return (
-    <micro-app
-      name="vue-app"
-      url="https://vite-vue.fufanghao.com/"
-      iframe
-    ></micro-app>
+    <iframe
+      style={{
+        width: "100%",
+        height: "100vw",
+      }}
+      frameBorder={0}
+      src="https://vite-vue.fufanghao.com/"
+    ></iframe>
   );
 }
 
 function LetApp() {
   return (
     <iframe
-      // name="let-app"
       style={{
         width: "100%",
-        height: "100vw"
+        height: "100vw",
       }}
       frameBorder={0}
       src="https://lit.fufanghao.com/"
-      // iframe
     ></iframe>
   );
 }
