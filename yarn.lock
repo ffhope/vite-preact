@@ -749,10 +749,10 @@ kolorist@^1.8.0:
   resolved "https://registry.yarnpkg.com/kolorist/-/kolorist-1.8.0.tgz#edddbbbc7894bc13302cdf740af6374d4a04743c"
   integrity sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==
 
-letd@0.0.16:
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/letd/-/letd-0.0.16.tgz#ca81991695bd2f47287fc1b1af6cc73aaf1a7cb8"
-  integrity sha512-XghVVmxO1xpUlRw2vWcHBPmg77lJ55uJCXqqDvTKEm8jMYNIx23+iPpDIz2IPCKmcX9XfDplQhPWLOU7cDvs1w==
+letd@0.0.20:
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/letd/-/letd-0.0.20.tgz#ec414d839d101aedbbdc716cc5f449d62eaa25ca"
+  integrity sha512-Du2SWmzcwlH9LKyYNnk8u0mso47crFJQZSy6rPhbrKDE+vuV4A1lNEPgBgl0kk3xdE1XxayvwR/TfSGB2CmqTA==
   dependencies:
     "@lit/react" "^1.0.2"
     lit "^3.1.0"

@@ -2,7 +2,7 @@ import { useState } from "preact/hooks";
 import preactLogo from "./assets/preact.svg";
 import viteLogo from "/vite.svg";
 import "./app.css";
-import { Button, Input, Select } from "letd";
+import { Button, Input, Select } from "letd/react";
 
 export function App() {
   const [app, setApp] = useState("preact");

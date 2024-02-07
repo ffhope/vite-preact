@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@micro-zoe/micro-app": "^1.0.0-rc.3",
-    "letd": "0.0.16",
+    "letd": "0.0.20",
     "preact": "^10.19.3"
   },
   "devDependencies": {
