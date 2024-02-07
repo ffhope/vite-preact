@@ -2,23 +2,56 @@ import { useState } from "preact/hooks";
 import preactLogo from "./assets/preact.svg";
 import viteLogo from "/vite.svg";
 import "./app.css";
-import { Button, Input } from "letd";
+import { Button, Input, Select } from "letd";
 
 export function App() {
   const [app, setApp] = useState("preact");
   return (
     <>
-      选择子应用：
-      <select
-        onChange={(e: any) => {
-          setApp(e.target.value);
+      <div
+        style={{
+          width: "100vw",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <option value="preact">基座应用Preact</option>
-        <option value="react">子应用React</option>
-        <option value="vue">子应用Vue</option>
-        <option value="let">组件库</option>
-      </select>
+        选择子应用: 
+        <div
+          style={{
+            width: 160,
+            marginLeft: 16,
+          }}
+        >
+          <Select
+            onChange={(e) => {
+              console.log(e);
+              setApp(e.target.value);
+            }}
+            options={[
+              {
+                label: "基座应用Preact",
+                value: "preact",
+              },
+              {
+                label: "子应用React",
+                value: "react",
+              },
+              {
+                label: "子应用Vue",
+                value: "vue",
+              },
+              {
+                label: "组件库",
+                value: "letd",
+              },
+            ]}
+          />
+        </div>
+      </div>
+
+
       <div
         style={{
           height: "80vh",
@@ -33,7 +66,7 @@ export function App() {
         {app === "preact" && <PreactApp />}
         {app === "react" && <ReactApp />}
         {app === "vue" && <VueApp />}
-        {app === "let" && <LetApp />}
+        {app === "letd" && <LetApp />}
       </div>
     </>
   );
